@@ -1,8 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function ConfirmationPage() {
+function ConfirmationContent() {
 
   const searchParams = useSearchParams();
 
@@ -14,23 +15,23 @@ export default function ConfirmationPage() {
 
     <main className="min-h-screen bg-gray-100 p-6 flex items-center justify-center">
 
-      <div className="bg-white p-8 rounded-xl shadow max-w-xl w-full">
+      <div className="bg-white p-8 rounded-2xl shadow-lg max-w-xl w-full">
 
-        <h1 className="text-3xl font-bold text-green-600 mb-6">
+        <h1 className="text-4xl font-bold text-green-600 mb-6">
           Booking Confirmed 🎉
         </h1>
 
         <div className="space-y-4">
 
-          <p className="text-black">
+          <p className="text-black text-lg">
             <strong>PNR:</strong> {pnr}
           </p>
 
-          <p className="text-black">
+          <p className="text-black text-lg">
             <strong>Passenger:</strong> {name}
           </p>
 
-          <p className="text-black">
+          <p className="text-black text-lg">
             <strong>Seat:</strong> {seat}
           </p>
 
@@ -39,6 +40,19 @@ export default function ConfirmationPage() {
       </div>
 
     </main>
+
+  );
+}
+
+export default function ConfirmationPage() {
+
+  return (
+
+    <Suspense fallback={<div>Loading...</div>}>
+
+      <ConfirmationContent />
+
+    </Suspense>
 
   );
 }
