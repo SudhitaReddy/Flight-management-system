@@ -46,13 +46,27 @@ export default function Navbar() {
           SkyBook Airlines
         </Link>
 
-        <Link href="/">
-          Flights
-        </Link>
+       <Link
+            href="/"
+            className="hover:text-gray-300"
+            >
+            Flights
+            </Link>
 
-        <Link href="/my-bookings">
-          My Bookings
-        </Link>
+            <Link
+            href="/my-bookings"
+            className="hover:text-gray-300"
+            >
+            My Bookings
+            </Link>
+
+            <Link
+            href="/admin"
+            className="hover:text-gray-300"
+            >
+            Admin
+            </Link>
+
 
       </div>
 
