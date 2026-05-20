@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✈️ SkyBook Airlines
 
-## Getting Started
+A modern full-stack Airline Reservation & Flight Management System built using Next.js, Supabase, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+This project simulates a real airline booking portal with authentication, flight search, seat booking, booking management, admin dashboard, analytics, and airline-style UI.
+
+---
+
+# 🚀 Live Features
+
+## 👤 Authentication System
+- User Signup
+- User Login
+- Session Management
+- Protected Routes
+- Logout Functionality
+
+---
+
+## ✈️ Flight Search System
+- Search Flights
+- Origin & Destination Filtering
+- Dynamic Flight Listings
+- Airline-style Flight Cards
+- Departure & Arrival Time Display
+- Flight Duration Calculation
+
+---
+
+## 🎟️ Booking System
+- Flight Booking
+- Passenger Details Form
+- Passport Verification Input
+- Nationality Selection
+- Aircraft-style Seat Selection
+- PNR Generation
+- Booking Confirmation Page
+
+---
+
+## 📋 Booking Management
+- My Bookings Dashboard
+- Cancel Booking
+- Reschedule Booking
+- Booking Status Updates
+- User-specific Bookings
+
+---
+
+## 🛠️ Admin Dashboard
+- Add Flights
+- Delete Flights
+- Flight Scheduling
+- Revenue Analytics
+- Total Bookings Statistics
+- Cancelled Booking Statistics
+- Flight Management Panel
+
+---
+
+## 📊 Analytics
+- Total Flights
+- Total Bookings
+- Total Revenue
+- Cancelled Bookings
+
+---
+
+# 🧑‍💻 Tech Stack
+
+## Frontend
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+
+## Backend
+- Supabase
+- PostgreSQL
+
+## Authentication
+- Supabase Auth
+
+## Deployment
+- Vercel
+
+---
+
+# 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+app/
+│
+├── admin/
+├── booking/
+├── confirmation/
+├── login/
+├── signup/
+├── my-bookings/
+├── components/
+│   └── Navbar.tsx
+│
+└── page.tsx
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone Repository
+https://github.com/SudhitaReddy/Flight-management-system/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+install
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run: npm run dev
 
-## Learn More
+Open Browser:http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+🔒 Authentication Flow
+New users can Signup
+Existing users can Login
+Unauthenticated users are redirected to Login page
+Session persists securely using Supabase Auth
+🌟 Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Real Airline UI
+✅ Aircraft Seat Layout
+✅ Protected Routes
+✅ Dynamic Booking Flow
+✅ Admin Analytics Dashboard
+✅ Responsive Design
+✅ Professional Flight Cards
+✅ Full CRUD Operations
+✅ Authentication System
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Future Improvements
+PDF Boarding Pass
+Email Notifications
+Real-time Seat Locking
+Payment Gateway Integration
+Admin Role Security
+Dark Mode
+Mobile App Version
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LIVe LInk : https://flight-management-system-9vm5.vercel.app/
